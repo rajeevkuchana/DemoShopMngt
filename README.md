@@ -1,7 +1,10 @@
 # SHOPs Management Demo
  
 ## Overview  
+Its a Shop Management Application where the shop details are stored in the in-memory database and also calculate the nearest shop with respect to an user location.
+Technnologies used are Java 11, Swagger 2.0 for API design and API testing using Swagger UI , H2 an open-source in-memory Database. Junit for unit testing(Mockito)
 
+## REST APIs
 Its a Spring Boot Java based microservice which implements functionalitiies 
  1) POST/ Shop : Which takes Shop Name(unique), Number and Postcode. Once the post request is submitted, the Postcode is used to get the latitude and longitude and save all the details. The responce to this API is either "Added" when the User input a Unquie Shop Name or "Update" when the User input an already existing Shop Name 
  2) GET/ Shop : Which takes the latitude and logitude as input and find the nearest Shop and outputs the same to the user.
