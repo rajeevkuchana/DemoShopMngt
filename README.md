@@ -1,4 +1,4 @@
-# Swagger generated server
+# SHOPs Management Demo
 
 Spring Boot Server 
 
