@@ -100,7 +100,7 @@ public class ShopService {
 				existingShop.setLongitude(null);
 			}
 			ShopMngt shopMngt = shopRepository.saveAndFlush(existingShop);
-			if (null != shopMngt) {
+			if (null == shopMngt) {
 				addSatuString = "Error";
 			}
 		} catch (URISyntaxException e) {
